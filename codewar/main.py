@@ -1,7 +1,14 @@
-def to_float_array(arr):
-    float_arr = [float(string_arr) for string_arr in arr]
-    return float_arr
+def explode(arr):  
+    array = []
+    for item in arr:
+        if type(item) == int:
+            for _ in range(item):
+                array.append(arr)
+                
+        if all(isinstance(x, str) for x in arr):
+            return "Void!"
+            
+    return array
+arr = ["f", "r"]
+print(explode(arr))
 
-
-arr = ["1.1", "2.2", "3.3"]
-print(to_float_array(arr))
