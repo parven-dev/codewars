@@ -1,12 +1,11 @@
-def high_and_low(numbers: str):
-  split_num = numbers.split(" ")
-  num = [int(items) for items in split_num ]
-  max_num =  str(max(num))
-  min_num = str(min(num))
-  combine_num = max_num + " " + min_num
-  return combine_num
-  
- 
+def get_count(sentence):
+    get_vowl = ''
+    for vowl in sentance:
+        if vowl in "aeiou":
+            get_vowl+=vowl
+            
+    return len(get_vowl)
+sentance  = "abracadabra"
+print(get_count(sentence=sentance))
 
-numbers = ("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
-print(high_and_low(numbers=numbers))
+
