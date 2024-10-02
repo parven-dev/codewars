@@ -1,15 +1,15 @@
-def count(s : str ):
-    # The function code should be here
+def vaporcode(s:str):
+    #your code here
+    upper_case = s.upper()
+    removed_space = upper_case.replace(' ', "")
+    resutl = ""
+    for word in removed_space:
+        string_with_space  = word + "  " 
+        resutl+=string_with_space
     
-    count_string = {}
+    return resutl.strip()
+            
     
-    for string in s:
-        if string in count_string:
-            count_string[string]+=1
-        else:
-            count_string[string] =1
-            
-    return count_string
-            
-s  = 'aabb'
-print(count(s))
+    
+s  = "Why isn't my code working"
+print(vaporcode(s))
