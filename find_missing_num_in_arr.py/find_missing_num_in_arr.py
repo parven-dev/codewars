@@ -13,6 +13,6 @@ arr = []
 for item in range(1, 100+1):
     arr.append(item)
 
-arr.remove(74)
+arr.remove(09)
 
 print(find_missing_number(arr))
